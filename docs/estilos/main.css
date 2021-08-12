@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i");
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+
+#barras {
+  position: fixed;
+  z-index: 1000;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  width: 2.85em;
+  height: 2.85em;
+  padding-top: 0.55em;
+  left: 1em;
+  top: 1em;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 50%;
+}
+.circulo {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.473);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#cont a {
+  color: #fff;
+  font-size: 1.8em;
+  margin: 2em 0;
+}
+#cont {
+  background: url(../imagenes/contacto.jpg) no-repeat center;
+}
+#cont {
+  position: relative;
+}
+#victor {
+  width: 180px;
+  height: 180px;
+  background: url(../imagenes/yo.jpg) center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: auto;
+  border: 6px solid #25b0d3;
+}
+#elMenu ul li a {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 500;
+  display: block;
+  padding: 0.5em 0;
+}
+#elMenu ul li a:hover {
+  color: #25b0d3;
+  background: rgba(0, 0, 0, 0.4);
+}
+#elMenu ul li {
+  margin: 2em 0;
+}
+#elMenu ul {
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 300;
+}
+#elMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  display: table;
+}
+#port {
+  background: url(../imagenes/portafolio.jpg) no-repeat center;
+}
+article div p {
+  margin-bottom: 1em;
+}
+article div a {
+  font-weight: 700;
+  color: #25b0d3;
+}
+article div {
+  width: 70%;
+  margin: auto;
+}
+#quien {
+  background: url(../imagenes/quien.png) no-repeat top center;
+}
+#section0 {
+  background: url(../imagenes/inicio.jpg) no-repeat top center;
+}
+#vid {
+  background: url(../imagenes/trabajos.jpg) no-repeat center;
+}
+#vid .curso {
+  width: 20%;
+  display: inline-block;
+  margin: 30px 1%;
+  position: relative;
+}
+#vid .curso a img {
+  width: 100%;
+  height: auto;
+}
+#vid .curso .descarga {
+  position: absolute;
+  width: 35%;
+  bottom: -1em;
+  right: -1em;
+  z-index: 100;
+}
+.barras #barrasc {
+  font-weight: lighter;
+}
+.barras {
+  color: #25b0d3;
+  font-size: 1.75em;
+  margin-left: 1px;
+}
+.section {
+  background-size: cover;
+}
+.slide {
+  background-size: cover;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  font-size: 0.9em;
+}
+h1,
+h2,
+h3 {
+  color: #25b0d3;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.info {
+  width: 40%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  color: rgba(255, 255, 255, 1);
+  margin: 0.5em auto;
+}
+
+@media only screen and (min-width: 70em) {
+  /*1120px*/
+  #elMenu ul li a {
+    font-size: 2em;
+  }
+  #elMenu ul li {
+    margin: 2em 0;
+  }
+  article div p {
+    font-size: 1.2em;
+    margin-bottom: 0.75em;
+  }
+  article div {
+    width: 78%;
+  }
+  h1 {
+    font-size: 6em;
+  }
+  h2 {
+    font-size: 5.5em;
+  }
+  section p {
+    padding: 0 6em;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  /*960px*/
+  #elMenu ul li a {
+    font-size: 1.4em;
+  }
+  #elMenu ul li {
+    margin: 0.5em 0;
+  }
+  article div p {
+    font-size: 1.1em;
+    margin: 0.75em;
+  }
+  article div {
+    width: 80%;
+  }
+  h2 {
+    font-size: 3em;
+    margin-top: 15px;
+  }
+  .contenedor {
+    position: relative;
+    flex-wrap: nowrap;
+    padding: 0 0 30px 0;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  /*800px*/
+  #elMenu ul li a {
+    font-size: 1.5em;
+  }
+  #elMenu ul li {
+    margin: 1.2em 0;
+  }
+  article div p {
+    font-size: 1em;
+    margin: 0.75em;
+    padding: 0 25px;
+  }
+  article div {
+    width: 84%;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  .contenedor {
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0 0 20px 0;
+  }
+  .carta {
+    position: relative;
+    flex: 0 1 auto;
+  }
+  .carta p {
+    padding: 50%;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  /*640px*/
+  #elMenu ul li a {
+    font-size: 1.2em;
+  }
+  #elMenu ul li {
+    margin: 1.2em 0;
+  }
+  article div p {
+    font-size: 0.9em;
+    margin-bottom: 0.65em;
+  }
+  article div {
+    width: 88%;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  section p {
+    padding: 0 4.5em;
+  }
+  #vid .curso {
+    display: block;
+    width: 35%;
+    margin: 0 auto 2em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  .contenedor {
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0 0 20px 0;
+    margin: 30px;
+  }
+  .carta {
+    position: relative;
+    flex: 0 1 auto;
+  }
+  .carta p {
+    padding: 50%;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  /*480px*/
+  #elMenu ul li a {
+    font-size: 1.35em;
+  }
+  article div p {
+    font-size: 0.8em;
+    margin-bottom: 0.75em;
+  }
+  article div {
+    width: 85%;
+  }
+  footer {
+    font-size: 0.8em;
+    padding: 1em 4em;
+  }
+  h1 {
+    font-size: 2.6em;
+  }
+  h2 {
+    font-size: 2.5em;
+    margin-top: 50px;
+  }
+  section p {
+    padding: 0 3em;
+    /* margin-top: 10px; */
+  }
+  #vid .curso {
+    display: block;
+    width: 35%;
+    margin: 0 auto 2em;
+  }
+  .contenedor {
+    position: relative;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 0 0 20px 0;
+  }
+  .carta {
+    flex: 0 1 auto;
+    transform-style: preserve;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  /*320px*/
+  #elMenu ul li a {
+    font-size: 1.5em;
+  }
+  article div p {
+    font-size: 0.9em;
+    margin-bottom: 0.75em;
+  }
+  article div {
+    width: 74%;
+  }
+  footer {
+    font-size: 0.8em;
+    padding: 1em 5em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 2em;
+    padding-bottom: 30px;
+  }
+  section p {
+    font-size: 1.055em;
+    padding: 0 2em;
+    /* margin-top: 10px; */
+  }
+  #vid .curso {
+    display: block;
+    width: 35%;
+    margin: 0 auto 2em;
+  }
+  .contenedor {
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 60px;
+  }
+  .carta {
+    flex: 1 1 auto;
+  }
+}
+
+@media only screen and (min-width: 48em) and (max-width: 68em) {
+  #section0,
+  #quien,
+  #vid,
+  #port,
+  #cont {
+    background-size: cover;
+  }
+}
